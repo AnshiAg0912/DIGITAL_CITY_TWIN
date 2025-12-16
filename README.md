@@ -113,6 +113,42 @@ Running backend:
 uvicorn main:app --reload
 Backend Running At:
 http://localhost:8000
+
+FRONTEND SETUP:
+1.Install vs code
+2. Install node.js
+3.Verify Node & npm Installation:
+Open VS Code → Terminal → New Terminal and give the commands:
+node -v
+npm -v
+4.cd Desktop
+mkdir digital-twin-hyd
+cd digital-twin-hyd
+5.Create frontend :
+npx create-react-app frontend
+6.Go inside frontend folder:
+cd frontend
+Start frontend:
+npm start
+Browser opens automatically:
+http://localhost:3000
+7.Install the necesarry libraries in frontend folder:
+npm install @mui/material @mui/icons-material
+npm install leaflet react-leaflet
+npm install recharts
+npm install digipin
+npm install axios
+npm install react-router-dom
+
+For final run:
+TERMINAL 1(Backend):
+cd backend
+venv\Scripts\activate
+uvicorn main:app --reload
+
+TERMINAL 2(Frontend):
+cd frontend
+npm start
     
 
 
